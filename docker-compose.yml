@@ -1,0 +1,11 @@
+version: '2.0'
+
+services:
+  cimpdf_php7:
+    build: ./php7
+    container_name: cimpdf_php7
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/var/www/html
+      - ./apache:/var/log/apache2/
